@@ -572,20 +572,6 @@ DATABASE_URL=postgresql+psycopg://user:password@host:5432/dbname
 
 ---
 
-## 16. 后续建议
-
-建议下一阶段优先扩展：
-
-1. 异步任务队列与进度条
-2. 任务级审计日志表
-3. 更强的上下文窗口与跨文件关联
-4. 支持原始文件预览
-5. 错误簇回归趋势（日/周）
-6. LLM Prompt 模板版本管理
-7. Excel / JSON / PDF 报告导出
-8. PostgreSQL + Alembic 迁移体系
-
----
 
 ## 本地启动增强说明
 
