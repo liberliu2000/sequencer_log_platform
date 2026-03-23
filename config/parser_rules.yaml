@@ -1,0 +1,31 @@
+time_formats:
+  - "%Y/%m/%d %H:%M:%S.%f"
+  - "%Y/%m/%d %H:%M:%S:%f"
+  - "%Y-%m-%d %H:%M:%S.%f"
+cycle_patterns:
+  - "\\bCycle\\s*(\\d+)\\b"
+  - "\\bcycle(\\d+)\\b"
+  - "\\bS(\\d{3,4})\\b"
+  - "\\bC(\\d{1,4})\\b"
+chip_patterns:
+  - "\\b(HLAB\\d{4,})\\b"
+  - "\\bchip[_ -]?name[:= ]+([A-Za-z0-9_.-]+)"
+  - "\\bslide[:= ]+([A-Za-z0-9_.-]+)"
+  - "\\b(B\\d{1,3}|A\\d{1,3})\\b"
+component_filename_rules:
+  OpticalBoard: "OpticalBoard"
+  RobotScheduler: "RobotScheduler"
+  RunError: "RunErrorService"
+  Scanner_1: "Scanner_1"
+  Scanner_2: "Scanner_2"
+  ScriptRunner: "ScriptRunner"
+  StageRunMgr: "StageRunMgr"
+  T100Scheduler: "T100Scheduler"
+  XYZStage: "XYZStage"
+  ErrorLogs: "GlobalErrorLog"
+  ImagingMetrics: "ImagingMetrics"
+  FOVMetrics: "FOVMetrics"
+  workflow: "Workflow"
+pairing_rules:
+  - start_keywords: ["start", "begin", "request", "setup", "fill"]
+    end_keywords: ["completed", "end", "success", "done", "finished"]

@@ -1,0 +1,18 @@
+normalization_rules:
+  remove_patterns:
+    - "\\b\\d+\\b"
+    - "0x[a-fA-F0-9]+"
+    - "\\b[0-9a-fA-F-]{16,}\\b"
+    - "[A-Z]:\\\\[^ ]+"
+    - "/[^ ]+"
+    - ":\\d+\\b"
+
+family_rules:
+  timeout: ["timeout", "time out"]
+  connection_lost: ["ConnectionLostException", "connection lost", "broken pipe"]
+  rpc_ice: ["Ice.", "RPC"]
+  db_open_failure: ["db open", "database", "sqlite"]
+  bad_image_format: ["bad image format", "image format"]
+  file_io: ["file not found", "IOException", "cannot open file"]
+  movement_stage_failure: ["stage", "movement", "axis", "homing"]
+  optics_camera_failure: ["camera", "optic", "exposure", "focus"]
